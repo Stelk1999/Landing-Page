@@ -1,0 +1,230 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding: 8px;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    background-color: #f1c512;
+    align-items: center;
+}
+
+.logo {
+    width: 50vw;
+    justify-content: center;
+    padding: 2px;
+    
+  } 
+
+  .contenitore {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  nav {
+    font-weight: 400;
+    display: flex;
+    gap: 70px;
+    width: 50vw;
+    justify-content: flex-end;
+  }
+
+  nav a {
+    text-decoration: none;
+    color:#000;
+  }
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 270px;
+    margin-top: 50px;
+}
+
+form {
+  text-align: center;
+}
+#hero input[type="email"] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+}
+#hero input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin-top: 7px;
+    border: 0;
+    background-color: #f1c40f;
+
+  }
+
+  #hero {
+    padding-top: 80px;
+  }
+
+  .btn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 20px;
+    height: 40px;
+    font-size: 1em;
+    font-weight: 900;
+    text-transform: uppercase;
+    border: 3px black solid;
+    border-radius: 2px;
+    background-color:#f1c40f;
+    cursor: pointer;
+  }
+
+ #About .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: #f1c40f;
+  font-size: 50px
+}
+
+
+.primo-titolo, .secondo-titolo, .terzo-titolo {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+#I-nostri-atleti {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center; 
+}
+
+#Prezzi {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.corsi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 400px;
+  width: calc(100% / 3);
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin-bottom: 40px;
+}
+
+.corsi > .livello {
+background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.corsi > ul{
+    margin: 15px 0;
+    list-style-type: none;
+    line-height: 2;
+}
+
+.lista-header{
+  list-style-type: none;
+}
+
+@media (max-width: 1200px) {
+  /* Schermi tra 900px e 1200px (Desktop medi) */
+  .logo {
+      width: 60vw;
+  }
+  nav {
+      gap: 50px;
+      width: 40vw;
+  }
+  .icon {
+      width: 30vw;
+  }
+  .corsi {
+      width: 30%;
+  }
+}
+
+@media (max-width: 900px) {
+  /* Schermi tra 600px e 900px (Tablet) */
+  .logo {
+      width: 70vw;
+  }
+  nav {
+      gap: 40px;
+      width: 30vw;
+  }
+  #I-nostri-atleti {
+      flex-direction: column;
+  }
+  #Prezzi {
+      flex-direction: column;
+  }
+  .corsi {
+      width: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Schermi fino a 600px (Dispositivi mobili) */
+  header {
+      padding: 5px;
+  }
+  .logo {
+      width: 100vw;
+  }
+  nav {
+      flex-direction: column;
+      gap: 15px;
+      width: 100vw;
+      justify-content: center;
+  }
+  #hero {
+      height: auto;
+      margin-top: 60px;
+  }
+  .icon {
+      width: 80vw;
+  }
+  #Prezzi {
+      flex-direction: column;
+  }
+  .corsi {
+      width: 90%;    
+  }
+}
